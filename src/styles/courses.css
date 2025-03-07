@@ -1,0 +1,132 @@
+.courses-section {
+  padding: 80px 50px 62px;
+}
+/* .course {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1201px;
+  width: 100%;
+  margin: 0 auto;
+} */
+.courses-heading {
+  text-align: center;
+}
+.course-div-outer {
+  margin: 0 auto;
+  max-width: 1340px;
+  flex-shrink: 0;
+  border-radius: 14.139px;
+  border: 0.884px solid #b31dc5;
+  background: linear-gradient(
+    179deg,
+    rgba(190, 30, 204, 0.18) 18.18%,
+    rgba(0, 23, 26, 0) 96.26%
+  );
+  padding: 45px 69px;
+  position: relative;
+}
+.course-div-outer.hidden {
+  max-height: 1060px;
+
+  overflow: hidden;
+}
+.course-div-outer-top {
+  padding-bottom: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.course-subheading {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+  max-width: 705px;
+}
+.course-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(347px, 1fr));
+  row-gap: 16px;
+  column-gap: 20px;
+  /* justify-content: space-between; */
+}
+.course-hide-div {
+  width: 100%;
+  height: 441px;
+  position: absolute;
+  bottom: 0;
+  height: 441px;
+  display: flex;
+  align-items: end;
+  padding: 19px;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(
+    184deg,
+    rgba(53, 11, 53, 0) 8.27%,
+    #350b35 69.19%
+  );
+  overflow: hidden;
+  color: #fff;
+  text-overflow: ellipsis;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5; /* 170.275% */
+  letter-spacing: 0.497px;
+  justify-content: center;
+  gap: 5px;
+}
+.course-hide-div > * {
+  cursor: pointer;
+}
+.course-hide-div-inner {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (width<780px) {
+  .course-subheading {
+    font-size: 19px;
+  }
+  .course-div-outer {
+    padding: 17px 13px;
+  }
+  .courses-section {
+    padding: 44px 0 45px;
+  }
+  .course-div-outer-top {
+    gap: 7px;
+    padding-bottom: 22px;
+  }
+  .course-div {
+    gap: 9px;
+  }
+  .course-hide-div {
+    height: 250px;
+    font-size: 16px;
+  }
+  .course-hide-div .course-hide-div-inner > svg {
+    width: 20.001px;
+    height: 20.001px;
+  }
+  .course-div-outer.hide {
+    height: 910px;
+  }
+}
+
+@media (width<580px) {
+  .course-subheading {
+    font-size: 14px;
+  }
+  .course-div {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}

@@ -1,0 +1,76 @@
+.app {
+  background: #350b35;
+}
+.fixed-offer {
+  display: flex;
+  width: 100%;
+  padding: 15px 0px 17px 0px;
+  justify-content: center;
+  align-items: center;
+  background: #5c055c;
+  gap: 16px;
+}
+.fixed-offer span {
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140.595%; /* 28.119px */
+  background: var(
+    --Linear,
+    linear-gradient(
+      100deg,
+      #b1b1b1 0.89%,
+      #bdbdbd 9.58%,
+      #ebe6e6 26.9%,
+      #fff 44.84%,
+      #f0f0f0 64.21%,
+      #cbcbcb 84.67%,
+      #bebebe 102.86%
+    )
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-golden {
+  background: var(
+    --Linear,
+    linear-gradient(91deg, #e6c689 0%, #fce6bd 28.24%, #bf9c5e 97.26%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-heading {
+  color: var(--Color-2, #fff);
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 128%;
+}
+@media (width<1024px) {
+}
+@media (width<780px) {
+  .fixed-offer {
+    padding: 9px 0;
+    gap: 12.73px;
+  }
+  .fixed-offer span {
+    font-size: 15.654px;
+  }
+  .section-heading {
+    font-size: 40px;
+  }
+}
+@media (width<580px) {
+  .section-heading {
+    font-size: 34px;
+  }
+}
+@media (width<400px) {
+  .section-heading {
+    font-size: 28px;
+  }
+}

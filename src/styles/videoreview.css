@@ -1,0 +1,99 @@
+.section-videoreview {
+  display: flex;
+  justify-content: flex-start;
+  gap: 61px;
+  padding-right: 0;
+  overflow: hidden;
+}
+
+.video-review-heading {
+  min-width: 351px;
+  line-height: 1.2;
+}
+
+.review-video-para {
+  margin-top: 6px;
+}
+
+.video-review-carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.video-review-top {
+  display: flex;
+  gap: 24px;
+}
+
+.video-review-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.video-carousel-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(
+    --Linear,
+    linear-gradient(
+      100deg,
+      #b1b1b1 0.89%,
+      #bdbdbd 9.58%,
+      #ebe6e6 26.9%,
+      #fff 44.84%,
+      #f0f0f0 64.21%,
+      #cbcbcb 84.67%,
+      #bebebe 102.86%
+    )
+  );
+  box-shadow: 2px 4px 0px 0px rgba(135, 134, 134, 0.11);
+  width: 268px;
+  height: 352px;
+}
+
+.video-carousel-card > img {
+  aspect-ratio: 236/254;
+  border-radius: 12px;
+}
+
+.video-review-author {
+  color: var(--585858, #585858);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 12px;
+  line-height: normal;
+}
+
+.video-review-profession {
+  color: var(--585858, #585858);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (width<1080px) {
+  .video-review-heading {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .section-videoreview {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .video-review-bottom {
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+}

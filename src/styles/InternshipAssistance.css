@@ -1,0 +1,117 @@
+.internship-assistance {
+  width: 100%;
+  padding: 42px 96px 79px;
+  max-width: 1249px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+.internship-assistance-top {
+  max-width: 849px;
+  & h2 {
+    text-align: center;
+  }
+}
+
+.internship-assistance-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  width: 100%;
+}
+.iab-card {
+  /* height: 286px; */
+  border-radius: 18px;
+  border: 1px dashed rgba(255, 255, 255, 0.19);
+  background: rgba(255, 255, 255, 0.01);
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+.iabb-head {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+}
+.iabb-subhead {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  padding-top: 10px;
+}
+@media (width<1280px) {
+  .iab-card {
+    padding: 30px 25px;
+  }
+  .internship-assistance-bottom {
+    gap: 20px;
+  }
+  .internship-assistance-bottom {
+    gap: 18px;
+  }
+}
+@media (width<1024px) {
+  .internship-assistance {
+    padding: 34px 48px 50px;
+    gap: 50px;
+  }
+  .iabb-head {
+    font-size: 21px;
+  }
+  .iabb-subhead {
+    font-size: 16px;
+  }
+  .iab-card {
+    padding: 27px 17px;
+  }
+}
+@media (width<780px) {
+  .internship-assistance {
+    padding: 34px 32px 31px;
+  }
+  .internship-assistance-bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .iab-card {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .iab-bottom {
+    gap: 7.843px;
+  }
+}
+@media (width<580px) {
+  .internship-assistance {
+    padding: 34px 16px 31px;
+  }
+  .iab-top > img {
+    width: 38px;
+    height: 38px;
+  }
+  .iab-card {
+    border-radius: 11.197px;
+    border: 0.622px dashed rgba(255, 255, 255, 0.19);
+    background: rgba(255, 255, 255, 0.01);
+    min-height: 130px;
+  }
+  .internship-assistance-bottom {
+    gap: 16px;
+  }
+  .iabb-subhead {
+    font-size: 14px;
+    padding-top: 7px;
+  }
+  .iabb-head {
+    font-size: 18px;
+  }
+}

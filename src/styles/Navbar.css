@@ -1,0 +1,113 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 12px 103px 0;
+}
+.navbar-inner {
+  width: 100%;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  background: rgba(63, 6, 63, 0.07);
+  padding: 9px 23px 9px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-right {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+.navbar-login {
+  display: flex;
+  padding: 14px 39px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7.998px;
+  border: 1px solid var(--Linear, #e6c689);
+  box-shadow: 0px 4.279px 9.521px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 123.5%; /* 19.76px */
+  background: var(
+    --Linear,
+    linear-gradient(91deg, #e6c689 0%, #fce6bd 28.24%, #bf9c5e 97.26%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar-signup {
+  display: flex;
+  padding: 14px 41px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7.998px;
+  background: var(
+    --Linear,
+    linear-gradient(91deg, #e6c689 0%, #fce6bd 28.24%, #bf9c5e 97.26%)
+  );
+  box-shadow: 0px 4.279px 9.521px 0px rgba(0, 0, 0, 0.25);
+  color: #350b35;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 123.5%; /* 19.76px */
+}
+@media (width<1280px) {
+  .navbar {
+    padding: 9px 64px 0;
+  }
+}
+@media (width<1024px) {
+  .navbar {
+    padding: 9px 42px 0;
+  }
+}
+@media (width<780px) {
+  .navbar {
+    padding: 9px 20px 7px 20px;
+  }
+}
+@media (width<580px) {
+  .navbar {
+    padding: 9px 9px 7px 9px;
+  }
+  .navbar-inner {
+    padding: 6px 5.85px 6.05px 11px;
+  }
+  .navbar-login {
+    padding: 9.1px 25.35px;
+    font-size: 10.4px;
+  }
+  .navbar-signup {
+    padding: 9.1px 26.65px;
+    font-size: 10.4px;
+  }
+  .navbar-right {
+    gap: 7.15px;
+  }
+  .navbar-logo {
+    width: 104px;
+    height: 40.95px;
+  }
+  .navbar-inner {
+    height: 54px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    background: rgba(53, 10, 53, 0.12);
+    backdrop-filter: blur(18.600000381469727px);
+  }
+}
+@media (width<400px) {
+}

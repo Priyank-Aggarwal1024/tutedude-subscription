@@ -1,0 +1,124 @@
+.star-div {
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  width: 25.264px;
+  height: 25.264px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.previous-arrow {
+  display: flex;
+  width: 44.212px;
+  height: 44.212px;
+  padding: 9.473px 9.479px 9.475px 9.469px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  border: 1.053px solid #fff;
+  background: rgba(255, 255, 255, 0);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.previous-arrow > svg {
+  width: 25.264px;
+  height: 25.264px;
+  flex-shrink: 0;
+}
+
+.next-arrow {
+  display: flex;
+  width: 44.212px;
+  height: 44.212px;
+  padding: 9.474px 9.47px 9.474px 9.478px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  border: 1.053px solid #fff;
+  background: rgba(255, 255, 255, 0);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.next-arrow:hover > svg > path,
+.previous-arrow:hover > svg > path {
+  stroke: #350b35;
+}
+
+.next-arrow:hover,
+.previous-arrow:hover {
+  background: #fff;
+  border: none;
+}
+
+.next-arrow > svg {
+  width: 25.264px;
+  height: 25.264px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1080px) {
+  .star > svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .star {
+    width: 18px;
+    height: 18px;
+  }
+
+  .star-div {
+    gap: 2px;
+  }
+
+  .next-arrow {
+    margin-left: 8px;
+  }
+
+  .previous-arrow {
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .star-div {
+    flex-wrap: wrap;
+  }
+
+  .star,
+  .star > svg {
+    width: 14.574px;
+    height: 14.574px;
+  }
+
+  .tct-l {
+    gap: 8px;
+  }
+
+  .next-arrow,
+  .previous-arrow {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .previous-arrow > svg,
+  .next-arrow > svg {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 20%);
+  }
+}
