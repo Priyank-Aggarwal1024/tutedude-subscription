@@ -10,28 +10,67 @@ import hi5 from "../assets/hi5.png";
 import hi6 from "../assets/hi6.svg";
 import hi7 from "../assets/hi7.svg";
 import hi8 from "../assets/hi8.svg";
+import { useState } from "react";
+import { useEffect } from "react";
+const FloatingDiv = ({ classN, imag }) => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const getRandomPosition = (max, offset) =>
+    Math.floor(Math.random() * (max - offset));
+
+  useEffect(() => {
+    const divWidth = 200;
+    const divHeight = 100;
+
+    const updatePosition = () => {
+      const maxX = 2 * divWidth;
+      const maxY = 2 * divHeight;
+
+      const randomX = getRandomPosition(maxX, divWidth);
+      const randomY = getRandomPosition(maxY, divHeight);
+
+      setPosition({ x: randomX, y: randomY });
+    };
+
+    const interval = setInterval(updatePosition, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <img
+      src={imag}
+      alt="Hero Icon Image"
+      className={`${classN}`}
+      style={{
+        transform: `translate(${position.x - 100}px, ${position.y - 100}px)`,
+        transition: "transform 1s ease-in-out",
+      }}
+    />
+  );
+};
+
 function Hero() {
+  const icons = [
+    { classN: "hero-icons hero-icon1", imag: hi1 },
+    { classN: "hero-icons hero-icon2", imag: hi2 },
+    { classN: "hero-icons hero-icon3", imag: hi3 },
+    { classN: "hero-icons hero-icon4", imag: hi4 },
+    { classN: "hero-icons hero-icon5", imag: hi5 },
+    { classN: "hero-icons hero-icon6", imag: hi6 },
+    { classN: "hero-icons hero-icon7", imag: hi7 },
+    { classN: "hero-icons hero-icon8", imag: hi8 },
+  ];
   return (
     <>
       <div className="hero">
-        <img src={heroDesign} alt="Hero Design" className="hero-design" />
-        <img
-          src={heroSmallDesign}
-          alt="Hero Design"
-          className="hero-small-design"
-        />
-        <img src={hi1} alt="Hero Icon" className="hero-icons hero-icon1" />
-        <img src={hi2} alt="Hero Icon" className="hero-icons hero-icon2" />
-        <img src={hi3} alt="Hero Icon" className="hero-icons hero-icon3" />
-        <img src={hi4} alt="Hero Icon" className="hero-icons hero-icon4" />
-        <img src={hi5} alt="Hero Icon" className="hero-icons hero-icon5" />
-        <img src={hi6} alt="Hero Icon" className="hero-icons hero-icon6" />
-        <img src={hi7} alt="Hero Icon" className="hero-icons hero-icon7" />
-        <img src={hi8} alt="Hero Icon" className="hero-icons hero-icon8" />
+        {icons.map((item, idx) => (
+          <FloatingDiv key={idx} imag={item.imag} classN={item.classN} />
+        ))}
         <div className="hero-top">An IIT Delhi Alumni Initiative</div>
         <div className="hero-middle">
           Master unlimited skills with{" "}
-          <span className="hero-golden">Tutedude Plus</span>
+          <span className="hero-golden fw-700">Tutedude Plus</span>
         </div>
         <div className="hero-bottom">
           <div className="hero-bottom-top">

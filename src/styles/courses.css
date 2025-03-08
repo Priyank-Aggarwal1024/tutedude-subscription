@@ -17,7 +17,7 @@
   max-width: 1340px;
   flex-shrink: 0;
   border-radius: 14.139px;
-  border: 0.884px solid #b31dc5;
+  border: 0.884px solid var(--Linear, #b31dc5);
   background: linear-gradient(
     179deg,
     rgba(190, 30, 204, 0.18) 18.18%,
@@ -25,6 +25,7 @@
   );
   padding: 45px 69px;
   position: relative;
+  border-bottom: none;
 }
 .course-div-outer.hidden {
   max-height: 1060px;

@@ -2,14 +2,16 @@ import "../styles/InternshipAssistance.css";
 import ia1 from "../assets/ia1.svg";
 import ia2 from "../assets/ia2.svg";
 import ia3 from "../assets/ia3.svg";
+// import cardoval from "../assets/card-oval.svg";
+
 function InternshipAssistance() {
   return (
     <>
       <div className="internship-assistance">
         <div className="internship-assistance-top">
           <h2 className="section-heading">
-            <span className="text-golden">Internship Assistance</span> with
-            Resume Building in One Place
+            <span className="text-golden fw-700">Internship Assistance</span>{" "}
+            with Resume Building in One Place
           </h2>
         </div>
         <div className="internship-assistance-bottom">
@@ -24,6 +26,7 @@ function InternshipAssistance() {
                 feature.
               </div>
             </div>
+            <span className="internship-assistance-ovaldesign"></span>
           </div>
           <div className="iab-card">
             <div className="iab-top">
@@ -35,6 +38,7 @@ function InternshipAssistance() {
                 Access exclusive job opportunities shared directly with you.
               </div>
             </div>
+            <span className="internship-assistance-ovaldesign"></span>
           </div>
           <div className="iab-card">
             <div className="iab-top">
@@ -47,6 +51,7 @@ function InternshipAssistance() {
                 and career prospects.
               </div>
             </div>
+            <span className="internship-assistance-ovaldesign"></span>
           </div>
         </div>
       </div>

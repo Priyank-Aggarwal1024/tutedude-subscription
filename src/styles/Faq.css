@@ -58,6 +58,7 @@
   font-weight: 400;
   line-height: 150%; /* 24px */
   letter-spacing: -0.096px;
+  width: 100%;
 }
 @media (width<1024px) {
   .faq-inner {

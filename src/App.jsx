@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import InternshipAssistance from "./components/InternshipAssistance";
 import Navbar from "./components/Navbar";
+import PlatformTestimonial from "./components/PlatformTestimonial";
 import Testimonials from "./components/Testimonials";
 import TutedudeLearn from "./components/TutedudeLearn";
 import TutedudePlus from "./components/TutedudePlus";
@@ -30,8 +31,9 @@ function App() {
         <InternshipAssistance />
         <TutedudePlus />
         <VideoCarousel />
-        <Testimonials />
-        <Best />
+        {/* <Testimonials /> */}
+        {/* <Best /> */}
+        <PlatformTestimonial />
         <Faq />
         <Footer />
       </div>

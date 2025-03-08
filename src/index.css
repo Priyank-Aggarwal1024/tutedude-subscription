@@ -9,7 +9,12 @@
 .text-center {
   text-align: center;
 }
-
+.fw-700 {
+  font-weight: 700;
+}
+.text-white {
+  color: white;
+}
 @media (width<1280px) {
 }
 @media (width<1024px) {

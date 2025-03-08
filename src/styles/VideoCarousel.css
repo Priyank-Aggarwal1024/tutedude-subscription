@@ -60,28 +60,25 @@
     aspect-ratio: 9/16;
   }
 
-  & .slick-dots.slick-dots li button {
-    /* margin-top: 21px; */
+  & .slick-dots.slick-dots li {
+    width: 8px;
+    height: 8px;
+    background-color: #d9d9d9;
+    margin: 0;
     border-radius: 50%;
-    width: 12.224px;
-    height: 12.224px;
-    background: #d9d9d9;
-    transition: all 100ms ease;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  & .slick-dots.slick-dots li button {
+    opacity: 0;
+  }
+  & .slick-dots.slick-dots li.slick-active {
+    background: linear-gradient(#fce6bd 29%, #bf9c5e 100%);
+  }
+  & .slick-dots.slick-dots li:hover {
+    background: linear-gradient(#fce6bd 29%, #bf9c5e 100%);
   }
 
-  & .slick-dots.slick-dots li button::before {
-    display: none;
-    counter-reset: none;
-  }
-
-  & li.slick-active.slick-active button {
-    background-color: #800080;
-  }
-
-  & .slick-dots.slick-dots li button:hover {
-    opacity: 0.7;
-    background: #800080;
-  }
   & .slick-dots.slick-dots {
     bottom: -40px;
   }

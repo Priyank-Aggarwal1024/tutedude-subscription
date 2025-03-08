@@ -49,6 +49,29 @@
   line-height: 150%; /* 27px */
   padding-top: 10px;
 }
+.iab-card {
+  position: relative;
+  overflow: hidden;
+}
+.iab-card > * {
+  z-index: 1;
+}
+.internship-assistance-ovaldesign {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-radius: 272px;
+  opacity: 0.7;
+  background: linear-gradient(
+    90deg,
+    #bd1ecc9a 2.1%,
+    rgba(255, 185, 18, 0.23) 85.05%
+  );
+  filter: blur(100px);
+}
 @media (width<1280px) {
   .iab-card {
     padding: 30px 25px;

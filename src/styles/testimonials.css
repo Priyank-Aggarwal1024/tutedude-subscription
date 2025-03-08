@@ -126,7 +126,7 @@
     cursor: pointer;
   }
   & .slick-dots.slick-dots li button {
-    display: none;
+    opacity: 0;
   }
   & .slick-dots.slick-dots li.slick-active {
     background: linear-gradient(#fce6bd 29%, #bf9c5e 100%);

@@ -3,18 +3,20 @@ import learn from "../assets/learn.svg";
 import learngif1 from "../assets/learngif1.gif";
 import learngif2 from "../assets/learngif2.gif";
 import learngif3 from "../assets/learngif3.gif";
+import cardoval from "../assets/card-oval.svg";
 function TutedudeLearn() {
   return (
     <>
       <div className="tutedude-learn">
         <div className="tutedude-learn-top">
           <h2 className="text-center section-heading">
-            How to Learn with <b className="text-golden">Tutedude Plus</b>
+            How to Learn with{" "}
+            <b className="text-golden fw-700">Tutedude Plus</b>
           </h2>
           <div className="tutedude-learn-top-bottom">
             <div className="tutedude-learn-tb-left">60,000+ Students</div>
             <div className="tutedude-learn-tb-right">
-              <span>4.9</span>
+              <span style={{ color: "white" }}>4.9</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -44,6 +46,11 @@ function TutedudeLearn() {
                   refund available)
                 </div>
               </div>
+              <img
+                src={cardoval}
+                alt="Card Background Design"
+                className="tutedude-learn-ovaldesign"
+              />
               <div className="tlml-card-right">1</div>
             </div>
             <div className="tlml-card">
@@ -56,6 +63,11 @@ function TutedudeLearn() {
                   30+ expert courses with <b>mentorship, Learn anytime</b>
                 </div>
               </div>
+              <img
+                src={cardoval}
+                alt="Card Background Design"
+                className="tutedude-learn-ovaldesign"
+              />
               <div className="tlml-card-right">2</div>
             </div>
             <div className="tlml-card">
@@ -68,6 +80,11 @@ function TutedudeLearn() {
                   Gain experience with <b>assignments, live projects</b>
                 </div>
               </div>
+              <img
+                src={cardoval}
+                alt="Card Background Design"
+                className="tutedude-learn-ovaldesign"
+              />
               <div className="tlml-card-right">3</div>
             </div>
           </div>

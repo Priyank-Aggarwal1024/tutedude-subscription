@@ -92,7 +92,7 @@
   transform: translate(-50%, -50%);
 }
 .tlml-card-gif > img {
-  width: 120%;
+  width: 100%;
 }
 .tutedude-learn-main-right {
   height: 100%;
@@ -123,16 +123,27 @@
   padding: 11.33px 14.162px;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 14.162px;
   border-radius: 5.665px;
-  background: #fcecff;
+  border: 1px solid #b31dc5;
   box-shadow: 0px 5.665px 8.922px 0px rgba(210, 210, 210, 0.25);
-  color: #350b35;
+  color: rgba(255, 255, 255, 0.82);
   font-family: Poppins;
   font-size: 19.827px;
   font-style: normal;
   font-weight: 500;
   line-height: 140.595%; /* 27.876px */
+}
+.tlml-card > * {
+  z-index: 1;
+}
+.tutedude-learn-ovaldesign {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 @media (width<1180px) {
   .tutedude-learn {
@@ -201,9 +212,6 @@
   }
   .tutedude-learn-main-left {
     width: calc(100% - 32px);
-  }
-  .tlml-card-gif > img {
-    width: 110%;
   }
   .tlml-card-right {
     font-size: 48.282px;

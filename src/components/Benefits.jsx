@@ -13,7 +13,7 @@ function Benefits() {
       <div className="benefits">
         <div className="benefits-inner">
           <h2 className="section-heading benefits-heading">
-            <span className="text-golden">Exclusive Benefits</span>{" "}
+            <span className="text-golden fw-700">Exclusive Benefits</span>{" "}
             <span>for you</span>
           </h2>
           <div className="benefits-top">

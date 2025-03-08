@@ -10,7 +10,8 @@ function Courses() {
       <div className={`course-div-outer ${!showcourses && "hidden"}`}>
         <div className="course-div-outer-top">
           <h2 className="section-heading courses-heading">
-            Get Access to <span className="text-golden">All 30+ Courses</span>
+            Get Access to{" "}
+            <span className="text-golden fw-700">All 30+ Courses</span>
           </h2>
           <p className="course-subheading">
             Instant Mentorship, internship assistance and best live projects to
