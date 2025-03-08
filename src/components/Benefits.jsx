@@ -11,6 +11,7 @@ function Benefits() {
   return (
     <>
       <div className="benefits">
+        <div className="div-circle-design benefits-circle-design"></div>
         <div className="benefits-inner">
           <h2 className="section-heading benefits-heading">
             <span className="text-golden fw-700">Exclusive Benefits</span>{" "}

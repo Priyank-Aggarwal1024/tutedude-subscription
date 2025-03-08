@@ -12,6 +12,7 @@ function Certificate() {
           <span className="text-golden fw-700">Certifications</span>
         </h2>
         <div className="certificate-main">
+          <div className="certificate-circle-design"></div>
           <img src={cld} alt="CLD" className="certificate-cld" />
           <img
             src={certificate}

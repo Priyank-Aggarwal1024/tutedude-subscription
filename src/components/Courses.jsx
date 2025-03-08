@@ -8,6 +8,7 @@ function Courses() {
   return (
     <section className="courses-section">
       <div className={`course-div-outer ${!showcourses && "hidden"}`}>
+        <div className="div-circle-design courses-circle-design"></div>
         <div className="course-div-outer-top">
           <h2 className="section-heading courses-heading">
             Get Access to{" "}

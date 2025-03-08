@@ -1,13 +1,31 @@
 .internship-assistance {
   width: 100%;
   padding: 42px 96px 79px;
-  max-width: 1249px;
-  margin: 0 auto;
+
+  overflow: hidden;
+  position: relative;
+}
+.internship-assistance-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 64px;
+  position: relative;
+  z-index: 2;
+  max-width: 1249px;
+  margin: 0 auto;
+  width: 100%;
 }
+.internship-assistance-circle-design {
+  left: 0;
+  z-index: 1;
+  transform: translate(-50%);
+}
+/* .internship-assistance-top,
+.internship-assistance-bottom {
+  position: relative;
+  z-index: 2;
+} */
 .internship-assistance-top {
   max-width: 849px;
   & h2 {

@@ -26,6 +26,19 @@
   padding: 45px 69px;
   position: relative;
   border-bottom: none;
+  overflow: hidden;
+}
+.course-div-outer-top,
+.course-div {
+  position: relative;
+  z-index: 2;
+}
+.courses-circle-design {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 0;
+  transform: translate(50%, -50%);
 }
 .course-div-outer.hidden {
   max-height: 1060px;
@@ -66,7 +79,7 @@
   align-items: end;
   padding: 19px;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   background: linear-gradient(
     184deg,
     rgba(53, 11, 53, 0) 8.27%,

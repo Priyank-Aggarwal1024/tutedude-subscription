@@ -31,7 +31,9 @@ function Faq() {
     <>
       <div className="faq-section">
         <div className="faq-inner">
-          <h2 className="section-heading text-center">
+          <div className="div-circle-design faq-circle-design"></div>
+
+          <h2 className="section-heading faq-heading text-center">
             Frequently Asked <b className="text-golden">Questions</b>
           </h2>
           <div className="faq-main">

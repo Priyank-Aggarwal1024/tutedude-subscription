@@ -20,9 +20,24 @@
       rgba(0, 23, 26, 0) 96.26%
     );
   gap: 87px;
+  overflow: hidden;
+  position: relative;
+}
+.faq-circle-design {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  transform: translate(-50%);
+  top: 0;
+}
+.faq-heading {
+  position: relative;
+  z-index: 2;
 }
 .faq-main {
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 .faq-div {
   display: flex;
@@ -68,7 +83,7 @@
 }
 @media (width<780px) {
   .faq-section {
-    padding: 0;
+    padding: 38px 0;
   }
   .faq-inner {
     padding: 71px 32px;

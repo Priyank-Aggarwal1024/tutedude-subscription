@@ -33,6 +33,9 @@ function PlatformTestimonial() {
   return (
     <>
       <div className="tutedude-pt">
+        <div className="div-circle-design platformtestimonial-circle-design"></div>
+        <div className="div-circle-design platformtestimonial-circle-design2"></div>
+
         <div className="tutedude-pt-top">
           <div className="tutedude-ptt-top">
             <div className="tutedude-ptt-top-head text-golden fw-700">
@@ -103,6 +106,8 @@ function PlatformTestimonial() {
         </div>
       </div>
       <div className="tutedude-ratingreview">
+        <div className="div-circle-design googlereviews-circle-design"></div>
+
         <div className="tutedude-ratingreview-inner">
           <div className="tutedude-rri-top">
             <div className="tutedude-rri-top-head ">

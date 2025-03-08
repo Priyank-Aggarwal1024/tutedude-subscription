@@ -8,6 +8,9 @@ function TutedudeLearn() {
   return (
     <>
       <div className="tutedude-learn">
+        <div className="div-circle-design tutedude-learn-circle-design-left"></div>
+        <div className="div-circle-design tutedude-learn-circle-design-right"></div>
+
         <div className="tutedude-learn-top">
           <h2 className="text-center section-heading">
             How to Learn with{" "}

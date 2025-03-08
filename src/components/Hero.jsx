@@ -1,7 +1,5 @@
 import "../styles/Hero.css";
 // import heroDesign from "../assets/hero-design.svg";
-import heroDesign from "../assets/hero-design.png";
-import heroSmallDesign from "../assets/hero-small-design.svg";
 import hi1 from "../assets/hi1.svg";
 import hi2 from "../assets/hi2.svg";
 import hi3 from "../assets/hi3.svg";

@@ -1,5 +1,21 @@
 .tutedude-pt {
   padding: 47px 64px 120px;
+  overflow: hidden;
+  position: relative;
+}
+.platformtestimonial-circle-design {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  transform: translate(-20%);
+  top: 20%;
+}
+.platformtestimonial-circle-design2 {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  transform: translate(20%);
+  top: 60%;
 }
 .tutedude-pt-top {
   display: flex;
@@ -7,6 +23,8 @@
   align-items: center;
   width: 100%;
   gap: 29px;
+  position: relative;
+  z-index: 2;
 }
 
 .tutedude-ptt-top-head {
@@ -128,12 +146,19 @@
 .tutedude-ptt-bottom-images-hide > * {
   cursor: pointer;
 }
-
+.googlereviews-circle-design {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  transform: translate(20%);
+}
 .tutedude-ratingreview {
   padding: 0 64px;
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
 .tutedude-ratingreview-inner {
   display: flex;
@@ -142,6 +167,8 @@
   align-items: center;
   gap: 35px;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 .tutedude-rri-top {
   display: flex;

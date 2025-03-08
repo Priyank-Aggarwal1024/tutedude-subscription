@@ -3,6 +3,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+.benefits > * {
+  z-index: 2;
+}
+.benefits-circle-design {
+  left: 0;
+  transform: translate(-50%, 50%);
 }
 .benefits-inner {
   width: 100%;
