@@ -11,23 +11,20 @@ import hi8 from "../assets/hi8.svg";
 import { useState } from "react";
 import { useEffect } from "react";
 const FloatingDiv = ({ classN, imag }) => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState({ y: 0 });
 
   const getRandomPosition = (max, offset) =>
     Math.floor(Math.random() * (max - offset));
 
   useEffect(() => {
-    const divWidth = 200;
-    const divHeight = 100;
+    const divHeight = 50;
 
     const updatePosition = () => {
-      const maxX = 2 * divWidth;
       const maxY = 2 * divHeight;
 
-      const randomX = getRandomPosition(maxX, divWidth);
       const randomY = getRandomPosition(maxY, divHeight);
 
-      setPosition({ x: randomX, y: randomY });
+      setPosition({ y: randomY });
     };
 
     const interval = setInterval(updatePosition, 1000);
@@ -41,7 +38,7 @@ const FloatingDiv = ({ classN, imag }) => {
       alt="Hero Icon Image"
       className={`${classN}`}
       style={{
-        transform: `translate(${position.x - 100}px, ${position.y - 100}px)`,
+        transform: `translateY( ${position.y - 50}px)`,
         transition: "transform 1s ease-in-out",
       }}
     />
@@ -74,9 +71,9 @@ function Hero() {
           <div className="hero-bottom-top">
             <div className="hero-bt-left">
               <p className="hero-btl-price">
-                <b>₹100</b>/mo{" "}
+                <span className="fw-700">₹1200</span>/yr{" "}
               </p>
-              <p className="hero-btl-disprice">₹833/mo</p>
+              <p className="hero-btl-disprice">₹₹10,000</p>
             </div>
             <div className="hero-bt-right">Start Subscription</div>
           </div>

@@ -1,7 +1,11 @@
-.tutedude-pt {
-  padding: 47px 64px 120px;
+.tutedude-platformtestimonials {
   overflow: hidden;
   position: relative;
+}
+.tutedude-pt {
+  padding: 47px 64px 120px;
+  position: relative;
+  z-index: 2;
 }
 .platformtestimonial-circle-design {
   position: absolute;
@@ -12,7 +16,7 @@
 }
 .platformtestimonial-circle-design2 {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   right: 0;
   transform: translate(20%);
   top: 60%;
@@ -24,7 +28,7 @@
   width: 100%;
   gap: 29px;
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 .tutedude-ptt-top-head {
@@ -37,7 +41,7 @@
 }
 .tutedude-ptt-top-para {
   padding-top: 6px;
-  color: #858585;
+  color: #fff;
   text-align: center;
   font-family: Poppins;
   font-size: 20px;
@@ -73,7 +77,8 @@
 }
 .tutedude-ptt-middle-linkactive {
   border-radius: 24px;
-  border: 1px solid #d6d6d6;
+  /* border: 1px solid #d6d6d6; */
+  border: none;
   background: #902190;
   color: #fff;
 }
@@ -134,7 +139,9 @@
   flex-shrink: 0;
   position: absolute;
   bottom: 0;
-  background: linear-gradient(0deg, #350b35 19.45%, #350b3578 90.11%);
+  background: linear-gradient(0deg, #350b3576 19.45%, #350b353b 90.11%);
+  /* filter: blur(10px); */
+  backdrop-filter: blur(4px);
   z-index: 1;
   color: white;
   font-family: Poppins;
@@ -149,7 +156,7 @@
 .googlereviews-circle-design {
   position: absolute;
   z-index: 1;
-  right: 0;
+  left: 0;
   transform: translate(20%);
 }
 .tutedude-ratingreview {
@@ -157,8 +164,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  overflow: hidden;
   position: relative;
+  z-index: 4;
 }
 .tutedude-ratingreview-inner {
   display: flex;
@@ -167,8 +174,6 @@
   align-items: center;
   gap: 35px;
   width: 100%;
-  position: relative;
-  z-index: 2;
 }
 .tutedude-rri-top {
   display: flex;

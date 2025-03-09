@@ -130,7 +130,7 @@
 }
 .hero-bottom-top {
   display: flex;
-  gap: 10px;
+  gap: 18px;
 }
 .hero-bt-left {
   display: flex;
@@ -273,8 +273,9 @@
     font-size: 16px;
   }
   .hero-bottom-top {
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+    gap: 10px;
   }
 }
 @media (width<580px) {

@@ -25,10 +25,28 @@ function App() {
         </div>
         <Hero />
         <Benefits />
+
+        <div className="tutedude-subs-floater-outer">
+          <div className="tutedude-subs-floater">
+            <div className="tutedude-subs-floater-left">
+              <div className="tutedude-subs-floater-left-head">₹1200/year</div>
+              <div className="tutedude-subs-floater-left-subhead">
+                ₹10,000/year
+              </div>
+            </div>
+            <div className="tutedude-subs-floater-right">
+              Start Subscription
+            </div>
+          </div>
+        </div>
         <Courses />
-        <TutedudeLearn />
-        <Certificate />
-        <InternshipAssistance />
+        <div className="certificate-3-section">
+          <TutedudeLearn />
+          <div className="certificate-circle-design"></div>
+
+          <Certificate />
+          <InternshipAssistance />
+        </div>
         <TutedudePlus />
         <VideoCarousel />
         {/* <Testimonials /> */}

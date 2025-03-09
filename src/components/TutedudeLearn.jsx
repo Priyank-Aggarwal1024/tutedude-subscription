@@ -9,7 +9,6 @@ function TutedudeLearn() {
     <>
       <div className="tutedude-learn">
         <div className="div-circle-design tutedude-learn-circle-design-left"></div>
-        <div className="div-circle-design tutedude-learn-circle-design-right"></div>
 
         <div className="tutedude-learn-top">
           <h2 className="text-center section-heading">
@@ -93,6 +92,7 @@ function TutedudeLearn() {
           </div>
           <div className="tutedude-learn-main-right">
             <img src={learn} alt="Tutedude Learn" />
+            <div className="tutedude-learn-circle-design-right"></div>
           </div>
         </div>
       </div>

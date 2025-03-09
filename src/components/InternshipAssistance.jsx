@@ -7,8 +7,8 @@ import ia3 from "../assets/ia3.svg";
 function InternshipAssistance() {
   return (
     <>
+      <div className="div-circle-design internship-assistance-circle-design"></div>
       <div className="internship-assistance">
-        <div className="div-circle-design internship-assistance-circle-design"></div>
         <div className="internship-assistance-inner">
           <div className="internship-assistance-top">
             <h2 className="section-heading">
