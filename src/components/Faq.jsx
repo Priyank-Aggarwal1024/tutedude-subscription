@@ -14,6 +14,11 @@ function Faq() {
       ques: "Can I get a refund for my Tutedude Plus subscription?",
       ans: "Tutedude plus subscriptions are non-refundable. Once a subscription is purchased, cancellations and refunds are not allowed.",
     },
+    {
+      checked: false,
+      ques: "What is the validity of the courses and when can I watch them?",
+      ans: "The courses in the Tutedude program subscription are valid for 1 year from the date of enrollment. You can watch them anytime within this period through the Tutedude’s dashboard.",
+    },
   ]);
   const handleClick = (idx) => {
     const newquery = query.map((item, id) => {
