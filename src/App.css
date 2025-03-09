@@ -89,7 +89,7 @@
   max-width: 649px;
   height: 153px;
   width: 100%;
-  background: url("/public/floater-image.png");
+  background: url("/public/floater-image.webp");
   background-size: 100% 100%;
   padding: 33px 48px;
   display: flex;

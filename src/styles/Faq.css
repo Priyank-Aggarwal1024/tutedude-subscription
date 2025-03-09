@@ -46,7 +46,7 @@
   align-items: center;
   gap: 11px;
   align-self: stretch;
-  border-bottom: 1.126px solid #e6c689;
+  border-bottom: 1.126px solid #e6c589ac;
 }
 .faq-div-top {
   display: flex;
