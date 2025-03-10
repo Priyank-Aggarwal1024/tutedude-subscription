@@ -206,6 +206,9 @@
   .tutedude-subs-floater-left-subhead {
     font-size: 18px;
   }
+  .floater-padding {
+    padding-bottom: 92px;
+  }
 }
 @media (width<400px) {
   .section-heading {

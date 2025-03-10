@@ -11,7 +11,11 @@ function CourseCard({ item }) {
         <div className="ccdl-right">{item.course_name}</div>
       </div>
       <div className="ccd-right">
-        <div className="ccdr-left">
+        <a
+          href={`https://tutedude.com/category/${item.slug}`}
+          style={{ cursor: "pointer" }}
+          className="ccdr-left"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -37,7 +41,7 @@ function CourseCard({ item }) {
             </defs>
           </svg>
           <span className="view">view</span>
-        </div>
+        </a>
       </div>
     </div>
   );

@@ -309,6 +309,9 @@
   }
 }
 @media (width<768px) {
+  .platformtestimonial-circle-design2 {
+    display: none;
+  }
   .tutedude-rri-top {
     gap: 22px;
   }
@@ -341,6 +344,9 @@
     border-radius: 18.144px;
     border: 0.756px solid #d6d6d6;
     font-size: 12px;
+  }
+  .tutedude-ptt-middle-linkactive {
+    border: none;
   }
   .tutedude-ptt-middle {
     gap: 4px;
